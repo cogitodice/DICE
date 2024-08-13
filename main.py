@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-import start
 import mastodon # 터미널에 pip install Mastodon.py
 import random # 안깔아도 됩니다
 from bs4 import BeautifulSoup # 터미널에 pip install beautifulsoup4 
