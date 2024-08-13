@@ -37,7 +37,6 @@ def main():
         print('auth fail')
         print(e)
     
-    # 핸들러... 라는 개념이 있습니다. 모르셔도 사용하는데 전혀! 관계 없으나, 궁금하다면 인터넷에서 '핸들러', '스트림 핸들러' 를 검색하세요.
     handler = StreamHandler(api, wks)
     api.stream_user(handler)
     
