@@ -38,8 +38,7 @@ def main():
         print(e)
     
     handler = StreamHandler(api, wks)
-    api.stream_user(handler)
-    
+    api.stream_user(handler)    
 
 
 
