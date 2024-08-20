@@ -91,23 +91,23 @@ class StreamHandler(mastodon.StreamListener):
         print('###### check_keyword 시작:', keywords)
         
         
-        if keywords[0] == '1d100': # 1d100
+        if keywords[0] == '1d100' or keywords[0] == '1D100': # 1d100
             dice100 = random.randint(1, 100)
             return str(dice100) # 숫자(int)가 아니라 문자열(str)로 답장
 
-        elif keywords[0] == '1d33': # 1d33
+        elif keywords[0] == '1d33' or keywords[0] == '1D33': # 1d33
             dice33 = random.randint(1, 33)
             return str(dice33) # 숫자(int)가 아니라 문자열(str)로 답장
         
-        elif keywords[0] == '1d20': # 1d20
+        elif keywords[0] == '1d20' or keywords[0] == '1D20': # 1d20
             dice20 = random.randint(1, 20)
             return str(dice20) # 숫자(int)가 아니라 문자열(str)로 답장
         
-        elif keywords[0] == '1d3': # 1d3
+        elif keywords[0] == '1d3' or keywords[0] == '1D3': # 1d3
             dice3 = random.randint(1, 3)
             return str(dice3) # 숫자(int)가 아니라 문자열(str)로 답장
             
-        elif keywords[0] == 'YN': # YN
+        elif keywords[0] == 'YN' or keywords[0] == 'yn': # YN
             YN = ["예", "아니오"]
             AN = random.choice(YN)
             return str(AN) # 숫자(int)가 아니라 문자열(str)로 답장
