@@ -95,9 +95,9 @@ class StreamHandler(mastodon.StreamListener):
             dice100 = random.randint(1, 100)
             return str(dice100) # 숫자(int)가 아니라 문자열(str)로 답장
 
-        elif keywords[0] == '1d33' or keywords[0] == '1D33': # 1d33
-            dice33 = random.randint(1, 33)
-            return str(dice33) # 숫자(int)가 아니라 문자열(str)로 답장
+        elif keywords[0] == '1d32' or keywords[0] == '1D32': # 1d32
+            dice32 = random.randint(1, 32)
+            return str(dice32) # 숫자(int)가 아니라 문자열(str)로 답장
         
         elif keywords[0] == '1d20' or keywords[0] == '1D20': # 1d20
             dice20 = random.randint(1, 20)
