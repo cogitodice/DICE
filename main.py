@@ -137,7 +137,7 @@ class StreamHandler(mastodon.StreamListener):
             RR = random.randint(1, len(records))-1
             print(records) # 리스트 안에 딕셔너리
             print(records[RR]) # 딕셔너리
-            randomA = records[RR]['뽑기']
+            randomA = records[RR]['운세']
             return randomA
         
 
