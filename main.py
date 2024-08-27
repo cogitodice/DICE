@@ -130,6 +130,15 @@ class StreamHandler(mastodon.StreamListener):
             print(records[RR]) # 딕셔너리
             randomA = records[RR]['뽑기']
             return randomA
+
+        elif keywords[0] == '운세':
+            worksheet = self.wks.worksheet('운세')
+            records = worksheet.get_all_records() # 전체 데이터를 가져온다
+            RR = random.randint(1, len(records))-1
+            print(records) # 리스트 안에 딕셔너리
+            print(records[RR]) # 딕셔너리
+            randomA = records[RR]['뽑기']
+            return randomA
         
 
         
